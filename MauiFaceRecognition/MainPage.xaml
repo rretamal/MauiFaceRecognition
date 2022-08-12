@@ -10,10 +10,7 @@
             Padding="30,0"
             VerticalOptions="Center">
 
-           <zxing:CameraView
-			x:Name="cameraView" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
-			 />
-
+            <zxing:CameraView x:Name="cameraView" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"></zxing:CameraView>
 
         </VerticalStackLayout>
     </ScrollView>
