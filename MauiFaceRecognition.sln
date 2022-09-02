@@ -10,9 +10,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		MauiFaceRecognition.sln = MauiFaceRecognition.sln
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maui.Tensorflow.Android", "Maui.Tensorflow.Android\Maui.Tensorflow.Android.csproj", "{91682763-69BD-4099-B2CC-08F4CB424179}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maui.FaceRecognition.Core", "Maui.FaceRecognition.Core\Maui.FaceRecognition.Core.csproj", "{85AC627C-4F0E-4C37-8351-3638E8C18CA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maui.Tensorflow.iOS", "Maui.Tensorflow.iOS\Maui.Tensorflow.iOS.csproj", "{9D97877F-681E-440F-B3C9-91FA1B26BB79}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maui.Tensorflow.Droid", "Maui.Tensorflow.Droid\Maui.Tensorflow.Droid.csproj", "{E3659A32-3B29-44DC-8282-CE26034C56AB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,14 +24,14 @@ Global
 		{2B316D12-C1CC-4A7C-94C7-89180E7FC5EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B316D12-C1CC-4A7C-94C7-89180E7FC5EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B316D12-C1CC-4A7C-94C7-89180E7FC5EB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{91682763-69BD-4099-B2CC-08F4CB424179}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{91682763-69BD-4099-B2CC-08F4CB424179}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{91682763-69BD-4099-B2CC-08F4CB424179}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{91682763-69BD-4099-B2CC-08F4CB424179}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9D97877F-681E-440F-B3C9-91FA1B26BB79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9D97877F-681E-440F-B3C9-91FA1B26BB79}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9D97877F-681E-440F-B3C9-91FA1B26BB79}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9D97877F-681E-440F-B3C9-91FA1B26BB79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85AC627C-4F0E-4C37-8351-3638E8C18CA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85AC627C-4F0E-4C37-8351-3638E8C18CA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85AC627C-4F0E-4C37-8351-3638E8C18CA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85AC627C-4F0E-4C37-8351-3638E8C18CA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3659A32-3B29-44DC-8282-CE26034C56AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3659A32-3B29-44DC-8282-CE26034C56AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3659A32-3B29-44DC-8282-CE26034C56AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3659A32-3B29-44DC-8282-CE26034C56AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
