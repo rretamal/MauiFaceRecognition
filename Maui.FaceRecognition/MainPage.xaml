@@ -29,7 +29,7 @@
             <zxing:CameraView x:Name="cameraView" Margin="0"  CameraLocation="Front" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
         </Frame>
         
-        <Button Grid.Row="3" Text="Reconocer!" HorizontalOptions="CenterAndExpand" Margin="0,40,0,40" Style="{StaticResource generalButton}">
+        <Button x:Name="btnTakePicture" Grid.Row="3" Text="Reconocer!" HorizontalOptions="CenterAndExpand" Margin="0,40,0,40" Style="{StaticResource generalButton}">
 
             <Button.Shadow>
                 <Shadow Brush="Black"
