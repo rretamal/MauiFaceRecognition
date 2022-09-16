@@ -9,6 +9,8 @@ using Android.Text.Style;
 using Android.Util;
 using Microsoft.Maui;
 using static Android.Provider.MediaStore;
+using Xamarin.Google.MLKit.Vision.Face;
+using System.IO;
 
 namespace Maui.FaceRecognition.Core;
 
@@ -22,11 +24,21 @@ public class FaceClassifier
     private int pixelSize = 3;
     private int imageMean = 128;
     private float imageStd = 128.0f;
+    IFaceDetector faceDetector;
 
     public FaceClassifier()
     {
         model = LoadModel();
         interpreter = new Org.Tensorflow.Lite.Interpreter(model);
+
+        var builder = new Xamarin.Google.MLKit.Vision.Face.FaceDetectorOptions.Builder();
+        builder.SetPerformanceMode(Xamarin.Google.MLKit.Vision.Face.FaceDetectorOptions.PerformanceModeFast);
+        builder.SetLandmarkMode(Xamarin.Google.MLKit.Vision.Face.FaceDetectorOptions.LandmarkModeAll);
+        builder.SetClassificationMode(Xamarin.Google.MLKit.Vision.Face.FaceDetectorOptions.ClassificationModeAll);
+
+        var faceOptions = builder.Build();
+
+        faceDetector = Xamarin.Google.MLKit.Vision.Face.FaceDetection.GetClient(faceOptions);
     }
 
     private MappedByteBuffer LoadModel()
@@ -45,8 +57,15 @@ public class FaceClassifier
 
     }
 
-    public void ExtractEmbeddings(byte[] image)
+    public void ExtractEmbeddings(byte[] image, int imgWidth, int imgHeight)
     {
+
+        Bitmap bitmapimg = BitmapFactory.DecodeByteArray(image, 0, image.Length);
+
+        //var inputImage = Xamarin.Google.MLKit.Vision.Common.InputImage.FromByteBuffer(image, imgWidth, imgHeight, 0, Xamarin.Google.MLKit.Vision.Common.InputImage.);
+
+        //faceDetector.Process
+
         var tensor = interpreter.GetInputTensor(0);
         var shape = tensor.Shape();
 

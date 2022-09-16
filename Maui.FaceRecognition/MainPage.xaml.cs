@@ -22,15 +22,13 @@ public partial class MainPage : ContentPage
     {
         var bytes = new Byte[e.Data.Data.Remaining()];
         e.Data.Data.Get(bytes, 0, bytes.Length);
-        
-        
+
+        frame = bytes;
     }
 
     private void BtnTakePicture_Clicked(object sender, EventArgs e)
     {
-        
-        //cameraView.Frame.
-        //classifier.ExtractEmbeddings()
+        //classifier.ExtractEmbeddings(frame);
     }
 }
 

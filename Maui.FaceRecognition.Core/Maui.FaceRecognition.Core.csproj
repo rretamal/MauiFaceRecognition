@@ -15,4 +15,10 @@
 	<ItemGroup>
 	  <ProjectReference Include="..\Maui.Tensorflow.Droid\Maui.Tensorflow.Droid.csproj" />
 	</ItemGroup>
+	<ItemGroup>
+	  <None Remove="Xamarin.GooglePlayServices.MLKit.FaceDetection" />
+	</ItemGroup>
+	<ItemGroup>
+	  <PackageReference Include="Xamarin.GooglePlayServices.MLKit.FaceDetection" Version="117.0.1.2" />
+	</ItemGroup>
 </Project>
